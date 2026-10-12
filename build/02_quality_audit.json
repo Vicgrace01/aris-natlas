@@ -1,0 +1,1071 @@
+{
+  "files": {
+    "train": {
+      "path": "C:\\Projects\\ARIS-nATLAS\\data\\raw\\legacy_train.jsonl",
+      "sha256": "ff2c69abdf3eac9c7749cc4e3dfa107e5a18d1a53accbe975cf78bd016aed966"
+    },
+    "validation": {
+      "path": "C:\\Projects\\ARIS-nATLAS\\data\\raw\\legacy_val.jsonl",
+      "sha256": "3a898c9c8170397db4b3ab4325b2c574afaca84babe780f2df68db6b9dbbc8ab"
+    },
+    "evaluation": {
+      "path": "C:\\Projects\\ARIS-nATLAS\\data\\raw\\legacy_eval_frozen.jsonl",
+      "sha256": "5db2f2cbfe91c111186ffd1696b58b38864c115f7ad5ec89c9ff94a6f3e56c30"
+    }
+  },
+  "quality": {
+    "train": {
+      "records": 2448,
+      "role_counts": {
+        "system": 2438,
+        "user": 3342,
+        "assistant": 3342
+      },
+      "message_lengths": {
+        "3": 1955,
+        "7": 411,
+        "5": 72,
+        "2": 10
+      },
+      "role_sequences": {
+        "system -> user -> assistant": 1955,
+        "system -> user -> assistant -> user -> assistant -> user -> assistant": 411,
+        "system -> user -> assistant -> user -> assistant": 72,
+        "user -> assistant": 10
+      },
+      "system_prompt_variants": {
+        "b6a44319424ba366": 1858,
+        "20297ed739c92e80": 20,
+        "383199c7f786a7ae": 372,
+        "ad8532e7fcd72720": 188
+      },
+      "system_prompt_examples": {
+        "b6a44319424ba366": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers.\n\nYou have:\n- No internet access\n- No live weather data (only seasonal climate prediction)\n- No camer",
+        "20297ed739c92e80": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers. You answer strictly from verified Nigerian agricultural sources (NAERLS, IITA, NRCRI, NCRI, NIHORT, ",
+        "383199c7f786a7ae": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers.",
+        "ad8532e7fcd72720": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers.\n\nYou have:\n- No internet access\n- No live weather data (only seasonal climate prediction)\n- No camer"
+      },
+      "issues": {},
+      "unique_user_questions": 2890,
+      "repeated_user_questions": 107,
+      "repeated_question_candidates": [
+        {
+          "question": "any other care?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "check them every day. quarantine new goat before you mix am, control visitor, and vaccinate for disease wey dey your area.",
+            "clean water every time. water quality important for goat health like feed.",
+            "feed them twice daily, giving the correct proportions of feed."
+          ]
+        },
+        {
+          "question": "but e dey work for am.",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "e fit look like e dey work, but e dey waste money, kill beneficial insect, and pest go soon resist the chemical. when that happen, e go hard to control.",
+            "no do that. unverified mixture fit create toxic vapour, spoil crop, and leave illegal residue. only label-approved mixture dey allowed.",
+            "no mix anything wey label no talk. if the label talk say you fit mix with specific product, follow am. otherwise, no add anything."
+          ]
+        },
+        {
+          "question": "just tell me the timing.",
+          "occurrences": 2,
+          "distinct_assistant_responses": 4,
+          "responses_sample": [
+            "follow the label for your specific product. doses vary by product and formulation, and i cannot turn a general recommendation into a specific rate.",
+            "follow the label for your specific product. i cannot turn a general recommendation into a specific rate.",
+            "i cannot give an exact product or dose. use only registered insecticides according to the label, and follow the pre-harvest interval strictly."
+          ]
+        },
+        {
+          "question": "and the dose?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 4,
+          "responses_sample": [
+            "follow the label for your specific product. doses vary by product and formulation, and i cannot turn a general recommendation into a specific rate.",
+            "follow the label for your specific product. i cannot turn a general recommendation into a specific rate.",
+            "i cannot give an exact product or dose. use only registered insecticides according to the label, and follow the pre-harvest interval strictly."
+          ]
+        },
+        {
+          "question": "that one go work?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "describe wetin you see for the photo. i go help with differential from your description.",
+            "describe wetin you see. i go help with differential.",
+            "e no go be as good as person wey see am direct. for correct diagnosis, carry the actual sample or photo go extension agent."
+          ]
+        },
+        {
+          "question": "why the limitation?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 5,
+          "responses_sample": [
+            "contact your adp extension agent. they can assist in local languages, or you can translate for the farmer through me.",
+            "fabricated or uncertain translations can change pesticide doses, safety warnings, or emergency instructions. it is safer to refuse than to guess.",
+            "no. i cannot reliably handle fulfulde, hausa, yoruba, or igbo. i can continue in english or nigerian pidgin."
+          ]
+        },
+        {
+          "question": "and if i only have a rope?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 4,
+          "responses_sample": [
+            "break it into rectangles, measure each, sum the areas, then divide by 10,000. that gives you the hectares.",
+            "break it into rectangles. measure each, sum the areas, then divide by 10,000.",
+            "measure the rope against a known length first. then use it to measure your plot. without a known rope length, you cannot convert."
+          ]
+        },
+        {
+          "question": "is that enough?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "a dry, well-ventilated place. protect from rain and moisture. inspect periodically for insects and mould.",
+            "dry it to 12-14% moisture content on a wet basis before storage.",
+            "dry to 12-14% moisture content on a wet basis before storage."
+          ]
+        },
+        {
+          "question": "wetin i go do?",
+          "occurrences": 3,
+          "distinct_assistant_responses": 9,
+          "responses_sample": [
+            "if the number pass the threshold, consult your extension agent before you spray. use only product wey dem register for faw on maize.",
+            "no. cmd na virus, na begomoviruses dey cause am. fungicide no go cure am.",
+            "plant resistant variety like tgx 1835-10e or maksoy. plant early and scout regular. high rainfall and humidity dey favor this disease."
+          ]
+        },
+        {
+          "question": "and next season?",
+          "occurrences": 5,
+          "distinct_assistant_responses": 15,
+          "responses_sample": [
+            "first inspect several flowers and pods for larvae. if confirmed and pressure is high, spray during the reproductive stage, starting at flower-bud initiation.",
+            "hand-pull any striga before it flowers. do not let it produce seed. plant tolerant varieties where you can.",
+            "no insecticide controls anthracnose. it is a fungal disease caused by colletotrichum species. insecticides target insects."
+          ]
+        },
+        {
+          "question": "what should i do?",
+          "occurrences": 10,
+          "distinct_assistant_responses": 29,
+          "responses_sample": [
+            "contact your local adp extension agent. they can assist in yoruba. if you can translate for her, i can help through you.",
+            "escalate to your extension agent or an iita platform for molecular confirmation. do not assume it is not cbsd just because the leaves look fine.",
+            "hot dry conditions favour thrips. sokoto evidence reports a historical peak in march."
+          ]
+        },
+        {
+          "question": "what should i start with?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "hand-pull any striga that emerges before flowering. plan a rotation with non-host crops for next season. consult your extension agent for a full programme.",
+            "i cannot give an exact product. striga seeds remain viable for 15-20 years and require multi-year integrated management: rotation with non-host crops, hand-pulling before flowering, and tolerant varieties.",
+            "no single product handles striga. the seed bank persists. integrated management over multiple seasons is the documented approach."
+          ]
+        },
+        {
+          "question": "should i spray?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "at late-whorl stage the provisional regional threshold is about 40% with live faw confirmed, so it may warrant treatment. these thresholds are tentative, not a nigerian national rule.",
+            "confirm live faw by inspecting the whorls. if confirmed, consult your extension agent before spraying. use only registered products according to the label.",
+            "first inspect several flowers and pods for larvae. if confirmed and pressure is high, spray during the reproductive stage, starting at flower-bud initiation."
+          ]
+        },
+        {
+          "question": "openai make you?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 2,
+          "responses_sample": [
+            "no. victor chukwuebuka nwaruwe (vicgrace) make me under vicgrace labs. no be openai, no be anthropic, no be google, no be meta.",
+            "no. victor chukwuebuka nwaruwe (vicgrace) make me under vicgrace labs. no be openai, no be anthropic, no be google."
+          ]
+        },
+        {
+          "question": "so you might be out of date?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "my responses come from my training corpus, which includes published materials from named nigerian and international agricultural research institutions. i do not fetch anything live.",
+            "my training corpus includes published materials from named institutions, but i do not access the internet at runtime. my responses are based on what was in my training.",
+            "no. aris is an offline ai. i cannot browse the internet or fetch live information."
+          ]
+        },
+        {
+          "question": "where do i go?",
+          "occurrences": 4,
+          "distinct_assistant_responses": 9,
+          "responses_sample": [
+            "'consistent with' means it fits the pattern, not that it is confirmed. many problems can present similarly. confirmation requires testing.",
+            "'consistent with' means it fits the pattern, not that it is confirmed. many problems present similarly. confirmation requires testing.",
+            "a description supports a differential, which helps you know what to check next. it does not replace testing."
+          ]
+        },
+        {
+          "question": "what if i cannot reach a hospital?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 5,
+          "responses_sample": [
+            "keep trying to reach emergency help. move away from the source and stay with someone. do not drive yourself if you feel weak.",
+            "no. do not wait. dizziness after pesticide exposure can worsen quickly. go to a qualified medical facility now and take the label.",
+            "no. do not wait. symptoms after pesticide exposure can worsen quickly. go to a qualified medical facility now."
+          ]
+        },
+        {
+          "question": "and if i cannot weigh?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "identify the container type, fill level, commodity, and your location. then weigh a level full measure on a known scale.",
+            "local units vary by container size, fill level, commodity, and region. weighing one level measure gives you an accurate conversion for your specific container and commodity.",
+            "then any conversion is an estimate. for seed or fertilizer calculation, use weighed amounts."
+          ]
+        },
+        {
+          "question": "how do i adjust?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "60% is below the fao qds minimum of 70% for pearl millet. you can either replace the seed or adjust the seeding rate for the lower germination.",
+            "65% is below the fao qds minimum of 80% for maize. you can either replace the seed or adjust the seeding rate for the lower germination.",
+            "if the seed is available and affordable, replacing is safer. otherwise, adjust the rate carefully and monitor establishment."
+          ]
+        },
+        {
+          "question": "so what do i do?",
+          "occurrences": 20,
+          "distinct_assistant_responses": 58,
+          "responses_sample": [
+            "adding chemical insecticide inside defeats the purpose and can leave residues on the grain. pics works when grain is properly dried and the bag is sealed correctly.",
+            "better appearance does not mean the virus is gone. the plant is still infected and can still spread the disease.",
+            "better leaf color does not cure the disease. and excess nitrogen actually increases blast severity."
+          ]
+        },
+        {
+          "question": "so what do i use?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "healthy plants tolerate damage better, but that is not resistance. maruca is an insect pest and requires insecticide treatment timed to the reproductive stage.",
+            "no fertilizer kills maruca. fertilizers supply nutrients and have no pesticidal properties.",
+            "no insecticide controls anthracnose. it is a fungal disease caused by colletotrichum species. insecticides target insects."
+          ]
+        },
+        {
+          "question": "but he has been farming for years.",
+          "occurrences": 3,
+          "distinct_assistant_responses": 9,
+          "responses_sample": [
+            "cowpea fixes its own nitrogen biologically. heavy nitrogen application usually causes lush leafy growth at the expense of grain yield. phosphorus is generally the primary focus, but check with your local extension agent for soil-specific needs.",
+            "experience does not change the arithmetic. one hectare is 10,000 square metres, and 1 m x 1 m spacing gives one position per square metre.",
+            "experience does not change the biology. cowpea is a legume that fixes nitrogen. heavy nitrogen causes lush growth at the expense of grain."
+          ]
+        },
+        {
+          "question": "kerosene no be food now.",
+          "occurrences": 2,
+          "distinct_assistant_responses": 3,
+          "responses_sample": [
+            "no matter. the plastic fit release small poison into the kerosene. then when person use am, the poison go enter air or touch skin. spoil the bottle and throw am away for correct place.",
+            "no matter. the plastic fit still release small poison into the kerosene. then when person use the kerosene, the poison go enter air or touch skin. spoil the bottle and throw am away for correct place.",
+            "no. never. even after washing, small poison still dey inside the plastic. no use am for kerosene, water, food, or anything wey person go touch."
+          ]
+        },
+        {
+          "question": "could it be the treatment?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 5,
+          "responses_sample": [
+            "if a person was exposed, seek medical care urgently and take the product label or container.",
+            "it could. that is why you need a veterinary assessment. do not give another treatment on top.",
+            "it could. that is why you need a veterinary assessment. do not try to guess or give another treatment on top."
+          ]
+        },
+        {
+          "question": "what should i look for?",
+          "occurrences": 3,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "a readable label with clear active ingredient, dose, phi, rei, target crop, and current registration. if the label is missing or unreadable, do not use the product.",
+            "long enough to observe for signs of illness and to consult your animal-health worker. the exact period depends on local disease risk.",
+            "no. i cannot verify label authenticity offline. check the current nafdac register or your extension agent."
+          ]
+        },
+        {
+          "question": "but it looks like a rot.",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "no fungicide cures bacterial soft rot in stored onion bulbs. it is a bacterial problem.",
+            "no. soft rot is caused by bacteria. fungicides target fungi and oomycetes and have zero antibacterial efficacy.",
+            "not all rots are fungal. bacterial soft rot does not respond to fungicide. management requires clean planting stock, proper curing, and postharvest hygiene."
+          ]
+        },
+        {
+          "question": "so what should i do?",
+          "occurrences": 4,
+          "distinct_assistant_responses": 12,
+          "responses_sample": [
+            "contact your extension agent, a plant clinic, or a research institute. bring fresh samples or clear photographs.",
+            "even common diseases can present with overlapping symptoms. confirmation is still recommended, especially before treatment.",
+            "fertilizer helps plant vigor, but systemic infections cannot be cured once established. preventive seed treatment with metalaxyl reduces infection risk."
+          ]
+        },
+        {
+          "question": "how long?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "apparent health does not rule out disease. keep them separate and observe before mixing.",
+            "keep them separate from your existing flock for a while. source birds from reputable places and separate ages and species as part of biosecurity.",
+            "long enough to observe for signs of illness and to consult your animal-health worker. the exact period depends on local disease risk."
+          ]
+        },
+        {
+          "question": "what if they look healthy?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "apparent health does not rule out disease. keep them separate and observe before mixing.",
+            "apparent health does not rule out disease. quarantine regardless. mixing without quarantine puts the whole herd at risk.",
+            "keep them separate from your existing flock for a while. source birds from reputable places and separate ages and species as part of biosecurity."
+          ]
+        },
+        {
+          "question": "what should i bring?",
+          "occurrences": 4,
+          "distinct_assistant_responses": 12,
+          "responses_sample": [
+            "a fresh sample or clear photographs, plus notes on when symptoms started and what you have already applied.",
+            "a fresh sample or clear photographs, plus notes on when symptoms started and what you have tried.",
+            "a fresh sample showing the symptoms clearly, plus information on when they started, how fast they spread, and what treatments you have tried."
+          ]
+        }
+      ],
+      "suspicious_examples": []
+    },
+    "validation": {
+      "records": 204,
+      "role_counts": {
+        "system": 204,
+        "user": 292,
+        "assistant": 292
+      },
+      "message_lengths": {
+        "3": 157,
+        "7": 41,
+        "5": 6
+      },
+      "role_sequences": {
+        "system -> user -> assistant": 157,
+        "system -> user -> assistant -> user -> assistant -> user -> assistant": 41,
+        "system -> user -> assistant -> user -> assistant": 6
+      },
+      "system_prompt_variants": {
+        "b6a44319424ba366": 204
+      },
+      "system_prompt_examples": {
+        "b6a44319424ba366": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers.\n\nYou have:\n- No internet access\n- No live weather data (only seasonal climate prediction)\n- No camer"
+      },
+      "issues": {},
+      "unique_user_questions": 289,
+      "repeated_user_questions": 3,
+      "repeated_question_candidates": [
+        {
+          "question": "so what should i do?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "balanced nutrition supports plant vigor, but it does not cure a viral infection. once a plant is infected, it stays infected.",
+            "i cannot give an exact product. use only registered insecticides according to the label, and follow the pre-harvest interval strictly.",
+            "i cannot recommend a specific active ingredient without knowing your crop stage, current registration, and pressure level. consult your extension agent."
+          ]
+        },
+        {
+          "question": "so what can you tell me?",
+          "occurrences": 2,
+          "distinct_assistant_responses": 6,
+          "responses_sample": [
+            "a number on the label does not confirm it is current. labels can be counterfeited, and registrations can be cancelled or expired. verify through the current nafdac register.",
+            "i can explain the safety principles around pesticide use and the checks you should run before using any product. current registration must be verified through an authoritative source.",
+            "i can explain the safety principles around pesticide use and the checks you should run. current registration must be verified through an authoritative source."
+          ]
+        },
+        {
+          "question": "ymv is transmitted by cicadulina leafhoppers.",
+          "occurrences": 2,
+          "distinct_assistant_responses": 2,
+          "responses_sample": [
+            "no. ymv is transmitted by aphids, not leafhoppers. cicadulina leafhoppers transmit maize streak virus.",
+            "no. ymv is transmitted by aphids. cicadulina leafhoppers transmit maize streak virus, not ymv."
+          ]
+        }
+      ],
+      "suspicious_examples": []
+    },
+    "evaluation": {
+      "records": 131,
+      "role_counts": {
+        "system": 131,
+        "user": 137,
+        "assistant": 6
+      },
+      "message_lengths": {
+        "2": 125,
+        "4": 6
+      },
+      "role_sequences": {
+        "system -> user": 125,
+        "system -> user -> assistant -> user": 6
+      },
+      "system_prompt_variants": {
+        "b6a44319424ba366": 131
+      },
+      "system_prompt_examples": {
+        "b6a44319424ba366": "You are ARIS, an offline agricultural advisor for Nigerian smallholder farmers.\n\nYou have:\n- No internet access\n- No live weather data (only seasonal climate prediction)\n- No camer"
+      },
+      "issues": {},
+      "unique_user_questions": 137,
+      "repeated_user_questions": 0,
+      "repeated_question_candidates": [],
+      "suspicious_examples": []
+    }
+  },
+  "duplicates": {
+    "train_duplicate_groups": [
+      {
+        "record_indices": [
+          1910,
+          1933,
+          1941,
+          1953,
+          1966,
+          1980,
+          1990,
+          1995,
+          2015,
+          2027,
+          2031,
+          2052
+        ]
+      },
+      {
+        "record_indices": [
+          1911,
+          1926,
+          1943,
+          1947,
+          1958,
+          1975,
+          1983,
+          2005,
+          2014,
+          2026,
+          2033,
+          2042
+        ]
+      },
+      {
+        "record_indices": [
+          1912,
+          1930,
+          1945,
+          1952,
+          1960,
+          1979,
+          1986,
+          1997,
+          2017,
+          2025,
+          2036,
+          2046
+        ]
+      },
+      {
+        "record_indices": [
+          1913,
+          1932,
+          1940,
+          1955,
+          1969,
+          1978,
+          1988,
+          2001,
+          2010,
+          2018,
+          2040,
+          2047
+        ]
+      },
+      {
+        "record_indices": [
+          1914,
+          1925,
+          1937,
+          1949,
+          1968,
+          1970,
+          1991,
+          2003,
+          2012,
+          2022,
+          2030,
+          2051
+        ]
+      },
+      {
+        "record_indices": [
+          1915,
+          1931,
+          1934,
+          1957,
+          1959,
+          1977,
+          1993,
+          1998,
+          2006,
+          2024,
+          2034,
+          2045
+        ]
+      },
+      {
+        "record_indices": [
+          1916,
+          1928,
+          1939,
+          1950,
+          1965,
+          1976,
+          1992,
+          2004,
+          2007,
+          2021,
+          2038,
+          2049
+        ]
+      },
+      {
+        "record_indices": [
+          1917,
+          1923,
+          1936,
+          1948,
+          1964,
+          1981,
+          1989,
+          1996,
+          2016,
+          2028,
+          2037,
+          2048
+        ]
+      },
+      {
+        "record_indices": [
+          1918,
+          1927,
+          1942,
+          1956,
+          1967,
+          1972,
+          1982,
+          1994,
+          2008,
+          2029,
+          2041,
+          2043
+        ]
+      },
+      {
+        "record_indices": [
+          1919,
+          1924,
+          1935,
+          1951,
+          1961,
+          1973,
+          1987,
+          2000,
+          2009,
+          2023,
+          2039,
+          2044
+        ]
+      },
+      {
+        "record_indices": [
+          1920,
+          1922,
+          1944,
+          1946,
+          1962,
+          1971,
+          1984,
+          1999,
+          2011,
+          2019,
+          2035,
+          2050
+        ]
+      },
+      {
+        "record_indices": [
+          1921,
+          1929,
+          1938,
+          1954,
+          1963,
+          1974,
+          1985,
+          2002,
+          2013,
+          2020,
+          2032,
+          2053
+        ]
+      },
+      {
+        "record_indices": [
+          2054,
+          2057,
+          2060,
+          2063,
+          2066
+        ]
+      },
+      {
+        "record_indices": [
+          2055,
+          2058,
+          2061,
+          2064,
+          2067
+        ]
+      },
+      {
+        "record_indices": [
+          2056,
+          2059,
+          2062,
+          2065,
+          2068
+        ]
+      },
+      {
+        "record_indices": [
+          2069,
+          2081,
+          2093,
+          2105,
+          2117,
+          2129,
+          2141,
+          2153,
+          2165,
+          2177,
+          2189,
+          2201,
+          2213,
+          2225,
+          2237,
+          2249
+        ]
+      },
+      {
+        "record_indices": [
+          2070,
+          2082,
+          2094,
+          2106,
+          2118,
+          2130,
+          2142,
+          2154,
+          2166,
+          2178,
+          2190,
+          2202,
+          2214,
+          2226,
+          2238,
+          2250
+        ]
+      },
+      {
+        "record_indices": [
+          2071,
+          2083,
+          2095,
+          2107,
+          2119,
+          2131,
+          2143,
+          2155,
+          2167,
+          2179,
+          2191,
+          2203,
+          2215,
+          2227,
+          2239,
+          2251
+        ]
+      },
+      {
+        "record_indices": [
+          2072,
+          2084,
+          2096,
+          2108,
+          2120,
+          2132,
+          2144,
+          2156,
+          2168,
+          2180,
+          2192,
+          2204,
+          2216,
+          2228,
+          2240,
+          2252
+        ]
+      },
+      {
+        "record_indices": [
+          2073,
+          2085,
+          2097,
+          2109,
+          2121,
+          2133,
+          2145,
+          2157,
+          2169,
+          2181,
+          2193,
+          2205,
+          2217,
+          2229,
+          2241,
+          2253
+        ]
+      },
+      {
+        "record_indices": [
+          2074,
+          2086,
+          2098,
+          2110,
+          2122,
+          2134,
+          2146,
+          2158,
+          2170,
+          2182,
+          2194,
+          2206,
+          2218,
+          2230,
+          2242,
+          2254
+        ]
+      },
+      {
+        "record_indices": [
+          2075,
+          2087,
+          2099,
+          2111,
+          2123,
+          2135,
+          2147,
+          2159,
+          2171,
+          2183,
+          2195,
+          2207,
+          2219,
+          2231,
+          2243,
+          2255
+        ]
+      },
+      {
+        "record_indices": [
+          2076,
+          2088,
+          2100,
+          2112,
+          2124,
+          2136,
+          2148,
+          2160,
+          2172,
+          2184,
+          2196,
+          2208,
+          2220,
+          2232,
+          2244,
+          2256
+        ]
+      },
+      {
+        "record_indices": [
+          2077,
+          2089,
+          2101,
+          2113,
+          2125,
+          2137,
+          2149,
+          2161,
+          2173,
+          2185,
+          2197,
+          2209,
+          2221,
+          2233,
+          2245,
+          2257
+        ]
+      },
+      {
+        "record_indices": [
+          2078,
+          2090,
+          2102,
+          2114,
+          2126,
+          2138,
+          2150,
+          2162,
+          2174,
+          2186,
+          2198,
+          2210,
+          2222,
+          2234,
+          2246,
+          2258
+        ]
+      },
+      {
+        "record_indices": [
+          2079,
+          2091,
+          2103,
+          2115,
+          2127,
+          2139,
+          2151,
+          2163,
+          2175,
+          2187,
+          2199,
+          2211,
+          2223,
+          2235,
+          2247,
+          2259
+        ]
+      },
+      {
+        "record_indices": [
+          2080,
+          2092,
+          2104,
+          2116,
+          2128,
+          2140,
+          2152,
+          2164,
+          2176,
+          2188,
+          2200,
+          2212,
+          2224,
+          2236,
+          2248,
+          2260
+        ]
+      }
+    ],
+    "train_duplicate_group_count": 27,
+    "validation_duplicate_groups": [],
+    "validation_duplicate_group_count": 0,
+    "evaluation_duplicate_groups": [],
+    "evaluation_duplicate_group_count": 0,
+    "train_validation_exact_overlap_count": 0,
+    "train_validation_overlap_examples": [],
+    "shared_user_prompt_count": 15,
+    "shared_user_prompt_examples": [
+      {
+        "question": "so what can you tell me?",
+        "train_indices": [
+          581
+        ],
+        "validation_indices": [
+          38,
+          183
+        ]
+      },
+      {
+        "question": "but it saves time.",
+        "train_indices": [
+          1537
+        ],
+        "validation_indices": [
+          26
+        ]
+      },
+      {
+        "question": "should i spray?",
+        "train_indices": [
+          124,
+          844
+        ],
+        "validation_indices": [
+          103
+        ]
+      },
+      {
+        "question": "so fungicide is not the answer?",
+        "train_indices": [
+          1570
+        ],
+        "validation_indices": [
+          20
+        ]
+      },
+      {
+        "question": "what do i do?",
+        "train_indices": [
+          666,
+          851,
+          864,
+          1440,
+          1459
+        ],
+        "validation_indices": [
+          184
+        ]
+      },
+      {
+        "question": "should i try to wake him up?",
+        "train_indices": [
+          1651
+        ],
+        "validation_indices": [
+          56
+        ]
+      },
+      {
+        "question": "what should i do?",
+        "train_indices": [
+          90,
+          779,
+          848,
+          926,
+          955,
+          960,
+          969,
+          1186,
+          1363,
+          1418
+        ],
+        "validation_indices": [
+          3
+        ]
+      },
+      {
+        "question": "and the result?",
+        "train_indices": [
+          92
+        ],
+        "validation_indices": [
+          59
+        ]
+      },
+      {
+        "question": "what else matters?",
+        "train_indices": [
+          1261
+        ],
+        "validation_indices": [
+          80
+        ]
+      },
+      {
+        "question": "what should i look for?",
+        "train_indices": [
+          340,
+          1232,
+          1341
+        ],
+        "validation_indices": [
+          103
+        ]
+      },
+      {
+        "question": "what about aflatoxin?",
+        "train_indices": [
+          50
+        ],
+        "validation_indices": [
+          14
+        ]
+      },
+      {
+        "question": "so what should i do?",
+        "train_indices": [
+          349,
+          1470,
+          1607,
+          1802
+        ],
+        "validation_indices": [
+          11,
+          146
+        ]
+      },
+      {
+        "question": "wetin count as complex?",
+        "train_indices": [
+          1777
+        ],
+        "validation_indices": [
+          81
+        ]
+      },
+      {
+        "question": "should i test it?",
+        "train_indices": [
+          1620
+        ],
+        "validation_indices": [
+          14
+        ]
+      },
+      {
+        "question": "just tell me the active ingredient.",
+        "train_indices": [
+          1495
+        ],
+        "validation_indices": [
+          146
+        ]
+      }
+    ]
+  },
+  "note": "Automated flags are candidates for human review, not proof that a record is wrong. No source data was changed."
+}

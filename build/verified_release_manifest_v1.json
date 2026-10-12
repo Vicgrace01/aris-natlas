@@ -1,0 +1,47 @@
+{
+  "release": "ARIS-N-ATLaS verified dataset v1",
+  "fact_ledger": {
+    "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_fact_ledger_v1.jsonl",
+    "records": 33,
+    "sha256": "022239c1e044b1cac12bb2d109f0a2efa3415b3ef62c7386c3cb2635bd005b8f"
+  },
+  "corrected_training": {
+    "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_corrected_training_v1.jsonl",
+    "records": 21,
+    "sha256": "66f1734f06909ecc8a711f0ce7f68b4f2f62ee732434dbf5c9dbdfebdd1eea55"
+  },
+  "expanded_training": {
+    "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_expanded_training_v1.jsonl",
+    "records": 154,
+    "sha256": "4cec0df5f62acc2c1ab4ce34f0a71e6658bba882f84465a8e305a7f103ebc49e"
+  },
+  "benchmark_500": {
+    "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_benchmark_500_v1.jsonl",
+    "records": 500,
+    "sha256": "38ed205a21d6766abafe5d8bd4d58dbb256a3191e00ea3fbeb9058e50d67298e"
+  },
+  "benchmark_categories": {
+    "crop_disease_pest": 80,
+    "planting_spacing": 60,
+    "fertilizer_calc": 60,
+    "pesticide_safety": 60,
+    "soil_water_weather": 40,
+    "harvest_postharvest": 40,
+    "livestock": 40,
+    "language_codeswitching": 60,
+    "uncertainty_adversarial": 30,
+    "prompt_robustness": 30
+  },
+  "sources_used": [
+    "FAO",
+    "IITA",
+    "NAERLS",
+    "NRCRI"
+  ],
+  "notes": [
+    "Legacy training and frozen eval files are untouched.",
+    "All training answers trace to fact_ids in the ledger.",
+    "Benchmark cases are evaluation-only and must not be mixed into training.",
+    "Time-sensitive facts are not used as training targets; they only appear as label-check cases."
+  ]
+}

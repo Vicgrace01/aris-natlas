@@ -1,0 +1,35 @@
+# Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Model artifacts (large)
+*.safetensors
+*.bin
+*.pt
+*.gguf
+models/
+
+# Caches
+.cache/
+kaggle/
+huggingface/
+
+# Secrets
+.env
+.env.*
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Large build archives
+build/*.zip
+build/*.tar.gz

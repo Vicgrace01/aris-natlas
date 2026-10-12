@@ -1,0 +1,22 @@
+{
+  "release": "ARIS-N-ATLaS dataset v1",
+  "base_training_file": "data\\raw\\ARIS_V10_FINAL_DATASET_V5 (1).jsonl",
+  "base_training_sha256": "ff2c69abdf3eac9c7749cc4e3dfa107e5a18d1a53accbe975cf78bd016aed966",
+  "base_training_records": 2448,
+  "validation_file": "data\\raw\\ARIS_V10_VAL_DATASET.jsonl",
+  "validation_sha256": "3a898c9c8170397db4b3ab4325b2c574afaca84babe780f2df68db6b9dbbc8ab",
+  "validation_records": 204,
+  "frozen_eval_file": "data\\raw\\ARIS_V10_EVAL_FROZEN_V3.jsonl",
+  "frozen_eval_sha256": "5db2f2cbfe91c111186ffd1696b58b38864c115f7ad5ec89c9ff94a6f3e56c30",
+  "frozen_eval_records": 131,
+  "curated_additions": 50,
+  "training_release_records": 2498,
+  "validation_release_records": 204,
+  "system_prompt_variants_preserved": true,
+  "legacy_oversampling_preserved": true,
+  "frozen_eval_modified": false,
+  "training_release": "data\\processed\\aris_natlas_train_v1.jsonl",
+  "validation_release": "data\\processed\\aris_natlas_validation_v1.jsonl",
+  "additions_file": "data\\processed\\aris_curated_safety_additions_v1.jsonl",
+  "warning": "Curated additions teach safe response behaviour; they are not a substitute for source-verified agricultural fact records."
+}
