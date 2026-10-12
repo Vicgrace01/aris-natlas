@@ -2,8 +2,8 @@
   "release": "ARIS-N-ATLaS verified dataset v1",
   "fact_ledger": {
     "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_fact_ledger_v1.jsonl",
-    "records": 33,
-    "sha256": "022239c1e044b1cac12bb2d109f0a2efa3415b3ef62c7386c3cb2635bd005b8f"
+    "records": 59,
+    "sha256": "8d5ba01236233710ae95b96b43a95167a1a3edcedcac45b4f88cdf45cffa50ca"
   },
   "corrected_training": {
     "path": "C:\\Projects\\ARIS-nATLAS\\data\\processed\\aris_corrected_training_v1.jsonl",
