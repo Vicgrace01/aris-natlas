@@ -1,0 +1,57 @@
+{
+  "base_overall": 0.6648000000000017,
+  "adapter_overall": 0.7935999999999999,
+  "delta": 0.12879999999999814,
+  "by_category": {
+    "crop_disease_pest": {
+      "base": 0.5587500000000002,
+      "adapter": 0.838750000000001,
+      "n": 80
+    },
+    "planting_spacing": {
+      "base": 0.7000000000000004,
+      "adapter": 0.7000000000000004,
+      "n": 60
+    },
+    "fertilizer_calc": {
+      "base": 0.7250000000000002,
+      "adapter": 0.7250000000000002,
+      "n": 60
+    },
+    "pesticide_safety": {
+      "base": 0.760000000000001,
+      "adapter": 0.9000000000000009,
+      "n": 60
+    },
+    "soil_water_weather": {
+      "base": 0.3700000000000002,
+      "adapter": 0.5800000000000004,
+      "n": 40
+    },
+    "harvest_postharvest": {
+      "base": 0.6999999999999995,
+      "adapter": 0.6999999999999995,
+      "n": 40
+    },
+    "livestock": {
+      "base": 1.0,
+      "adapter": 1.0,
+      "n": 40
+    },
+    "language_codeswitching": {
+      "base": 0.58,
+      "adapter": 0.7899999999999998,
+      "n": 60
+    },
+    "uncertainty_adversarial": {
+      "base": 0.86,
+      "adapter": 1.0,
+      "n": 30
+    },
+    "prompt_robustness": {
+      "base": 0.4400000000000002,
+      "adapter": 0.7200000000000003,
+      "n": 30
+    }
+  }
+}

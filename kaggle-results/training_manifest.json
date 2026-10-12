@@ -1,0 +1,17 @@
+{
+  "model_base": "NCAIR1/N-ATLaS",
+  "method": "4-bit QLoRA supervised fine-tuning",
+  "training_records": 2498,
+  "validation_records": 204,
+  "benchmark_records": 500,
+  "max_sequence_length": 2048,
+  "epochs_requested": 2,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "seed": 42,
+  "best_eval_loss": 0.9191275835037231,
+  "best_checkpoint": "/kaggle/working/aris-natlas-training/checkpoint-600",
+  "train_file_sha256": "a6a16563495ec537105aeb746e74f0201b3d0e12b92549174acfeeb6fa0fce66",
+  "validation_file_sha256": "928dd88c9dd54772efd939bec6381315da1534aa81e9cf14e9e098f37fd5038e",
+  "benchmark_file_sha256": "38ed205a21d6766abafe5d8bd4d58dbb256a3191e00ea3fbeb9058e50d67298e"
+}
