@@ -1,0 +1,231 @@
+{
+  "passed": 45,
+  "total": 45,
+  "checks": [
+    {
+      "status": "[PASS]",
+      "label": "fact ledger",
+      "detail": "data/processed/aris_fact_ledger_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "corrected training",
+      "detail": "data/processed/aris_corrected_training_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "expanded training",
+      "detail": "data/processed/aris_expanded_training_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "500-case benchmark",
+      "detail": "data/processed/aris_benchmark_500_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "red-team battery",
+      "detail": "data/processed/aris_redteam_battery_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "training release",
+      "detail": "data/processed/aris_natlas_train_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "validation release",
+      "detail": "data/processed/aris_natlas_validation_v1.jsonl"
+    },
+    {
+      "status": "[PASS]",
+      "label": "release manifest",
+      "detail": "build/verified_release_manifest_v1.json"
+    },
+    {
+      "status": "[PASS]",
+      "label": "technical report",
+      "detail": "REPORT.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "readme",
+      "detail": "README.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "design doc",
+      "detail": "docs/DESIGN.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "dataset card",
+      "detail": "docs/DATASET_CARD.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "provenance doc",
+      "detail": "docs/PROVENANCE.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "source registry",
+      "detail": "docs/SOURCE_REGISTRY.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "reproduce instructions",
+      "detail": "docs/REPRODUCE.md"
+    },
+    {
+      "status": "[PASS]",
+      "label": "integrity tests",
+      "detail": "tests/test_artifacts.py"
+    },
+    {
+      "status": "[PASS]",
+      "label": "CI workflow",
+      "detail": ".github/workflows/verify.yml"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark has exactly 500 cases",
+      "detail": "got 500"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark case_ids unique",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark crop_disease_pest == 80",
+      "detail": "got 80"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark planting_spacing == 60",
+      "detail": "got 60"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark fertilizer_calc == 60",
+      "detail": "got 60"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark pesticide_safety == 60",
+      "detail": "got 60"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark soil_water_weather == 40",
+      "detail": "got 40"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark harvest_postharvest == 40",
+      "detail": "got 40"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark livestock == 40",
+      "detail": "got 40"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark language_codeswitching == 60",
+      "detail": "got 60"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark uncertainty_adversarial == 30",
+      "detail": "got 30"
+    },
+    {
+      "status": "[PASS]",
+      "label": "benchmark prompt_robustness == 30",
+      "detail": "got 30"
+    },
+    {
+      "status": "[PASS]",
+      "label": "fact ledger schema valid",
+      "detail": "59 records"
+    },
+    {
+      "status": "[PASS]",
+      "label": "fact ledger statuses valid",
+      "detail": "bad: []"
+    },
+    {
+      "status": "[PASS]",
+      "label": "manifest hash fact_ledger",
+      "detail": "hash mismatch"
+    },
+    {
+      "status": "[PASS]",
+      "label": "manifest hash corrected_training",
+      "detail": "hash mismatch"
+    },
+    {
+      "status": "[PASS]",
+      "label": "manifest hash expanded_training",
+      "detail": "hash mismatch"
+    },
+    {
+      "status": "[PASS]",
+      "label": "manifest hash benchmark_500",
+      "detail": "hash mismatch"
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Executive summary'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## The problem'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Design decisions'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Model provenance'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Constraints'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Data verification methodology'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Benchmark methodology'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## Limitations'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": "REPORT has '## How to reproduce'",
+      "detail": ""
+    },
+    {
+      "status": "[PASS]",
+      "label": ".gitattributes locks line endings",
+      "detail": ""
+    }
+  ]
+}
